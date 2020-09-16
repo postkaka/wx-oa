@@ -1,0 +1,41 @@
+<!--pages/product/product.wxml-->
+<!-- 选择商品信息 -->
+<view>
+  <text >选择商品</text>
+<view class="_change">
+  <radio-group bindchange="radioChange">
+    <label class="_label" wx:for="{{items}}" wx:key='items.value'>
+      <view class="weui-cell__hd">
+        <radio value="{{item.value}}" checked="true"/>
+      </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+</view>
+<!-- 选择安装方式 -->
+<view class="chooseWay">
+  <view class="chooseWayText">选择安装方式</view>
+<view class="_change">
+  <radio-group bindchange="_radioChange">
+    <label class="_label" wx:for="{{choose}}" wx:key='choose.value'>
+      <view class="weui-cell__hd">
+        <radio value="{{choose.value}}" checked="true"/>
+      </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+</view>
+<!-- 付款信息 -->
+<view class="payment">
+  <view class="paymentText">付款信息</view>
+<view>
+  <button  bindtap="viewBtn">上传付款信息</button>
+</view>
+</view>
+
+<view class="btn">
+  <button form-type="reset" size="mini" class="_btn" open-type>重置</button>
+  <button form-type="submit" size="mini" class="_btn" open-type>提交审核</button>
+</view>

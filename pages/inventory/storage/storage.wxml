@@ -1,0 +1,64 @@
+<!--pages/inventory/storage/storage.wxml-->
+<view class="frame-title">
+  <view class="title-name">货物入库</view>
+</view>
+
+  <!-- 货物名称 -->
+  <van-cell-group >
+  <van-field
+    model:value="{{ value }}"
+    label="货物名称"
+    placeholder="请输入货物名称"
+    border="{{ false }}"
+    size="large"
+    custom-style=" border-bottom: 1px solid #eeeeee;color: black"
+  />
+  </van-cell-group>
+  <!-- 货物类型 -->
+  <van-cell-group >
+  <van-field
+    model:value="{{ value }}"
+    label="货物类型"
+    placeholder="请输入货物类型"
+    border="{{ false }}"
+    size="large"
+    custom-style=" border-bottom: 1px solid #eeeeee;color: black"
+  />
+  </van-cell-group>
+  <!-- 入库数量 -->
+  <van-cell-group >
+  <van-field
+    model:value="{{ value }}"
+    label="入库数量"
+    placeholder="请输入库数量"
+    border="{{ false }}"
+    size="large"
+    custom-style=" border-bottom: 1px solid #eeeeee;color: black"
+  />
+  </van-cell-group>
+  <!-- 选择仓库类型 -->
+  <view class="warehouse">
+    <view class="warehouse-view">仓库类型</view>
+    <van-radio-group value="{{ radio }}" class="radio">
+      <van-radio name="1" class="van-radio">正常货品库</van-radio>
+      <van-radio name="2" class="van-radio">破损货品库</van-radio>
+    </van-radio-group>  
+  </view>
+  <!-- 备注 -->
+  <van-cell-group>
+  <van-field
+    class="note"
+    value="{{ message }}"
+    label="备注"
+    type="textarea"
+    placeholder="请输入备注信息"
+    autosize
+    border="{{ false }}"
+    size="large"
+  />
+  </van-cell-group>
+   <!-- 按钮 -->
+  <view class="btn">
+    <van-button round type="info" color="green">清空内容</van-button>
+    <van-button round type="info">提交入库</van-button>
+  </view>

@@ -1,0 +1,32 @@
+<!--pages/index/index.wxml-->
+<view class="logo">
+  <image src="../../assets/image/index/logo.jpg"></image>
+</view>
+<view class="content-list">
+  <view class="content" bindtap="contentListBtn">
+    <view>
+      <image src="../../assets/image/index/xs.png" class="index-image"></image>
+    </view>
+    <text>订单管理</text>
+  </view>
+  <view class="content" bindtap="contentInventory">
+    <view>
+      <image src="../../assets/image/index/kucun.png" class="index-image"></image>
+    </view>
+    <text>库存管理</text>
+  </view>
+  <view class="content">
+    <view class="_content">
+      <image src="../../assets/image/index/kefu.png" class="index-image"></image>
+    </view>
+    <text>客服管理</text>
+  </view>
+  <view class="content">
+    <view class="_content">
+      <image src="../../assets/image/index/A.png" class="index-image"></image>
+    </view>
+    <text>售后管理</text>
+  </view>
+</view>
+
+

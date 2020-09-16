@@ -1,0 +1,21 @@
+/* pages/index/index.wxss */
+.logo {
+  text-align: center;
+}
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+._content {
+  margin-top: 50rpx;
+}
+.index-image {
+  height: 180rpx;
+  width: 180rpx;
+}

@@ -1,0 +1,8 @@
+/* pages/inventory/delivery/delivery.wxss */
+.title-name {
+  font-size: 50rpx;
+  margin-left: 30rpx;
+  margin-bottom: 15rpx;
+  margin-top: 50rpx;
+  font-weight: 800;
+}

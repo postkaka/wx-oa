@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "my-calendar": "/components/My-calendar/my-calendar"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "销售订单",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light"
+}

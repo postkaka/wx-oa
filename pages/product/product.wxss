@@ -1,0 +1,33 @@
+/* pages/product/product.wxss */
+._change{
+  margin-top: 20rpx;
+}
+._label {
+  display: flex;
+}
+.chooseWay {
+  margin-top: 50rpx;
+}
+.chooseWayText {
+  margin-bottom: 20rpx;
+}
+.payment {
+  margin-top: 50rpx;
+}
+.paymentText {
+  margin-bottom: 20rpx;
+}
+.btn {
+  width: 100%;
+  position: fixed;
+  bottom: 50rpx;
+  display: flex;
+  justify-content: space-around;
+}
+._btn {
+   width: 100%; 
+   color: white;
+   background-color:#1CBBB4;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}

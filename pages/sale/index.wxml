@@ -1,0 +1,158 @@
+<!--pages/index/index.wxml-->
+<view>
+<!-- 店名 -->
+<view class="cu-form-group">
+<text class="tag">店名</text>
+<input type="text" class="_input" placeholder="请输入店名"></input>
+</view>
+<!--地址-->
+<view  class="cu-form-group">
+  <text class="tag">地址</text>
+  <input type="text" class="_input" placeholder="请输入地址"></input>
+</view>
+<!--所属派出所-->
+<view  class="cu-form-group">
+  <text class="tag">所属派出所</text>
+  <input type="text" class="_input" placeholder="请输入所属派出所"></input>
+</view>
+<!--经营者姓名-->
+<view  class="cu-form-group">
+  <text class="tag">经营者姓名</text>
+  <input type="text" class="_input" placeholder="请输入经营者姓名"></input>
+</view>
+<!--营业执照姓名-->
+<view  class="cu-form-group">
+  <text class="tag">营业执照姓名</text>
+  <input type="text" class="_input" placeholder="请输入营业执照姓名"></input>
+</view>
+<!--联系方式（需要对手机号长度进行判断）-->
+<view  class="cu-form-group">
+  <text class="tag">联系方式</text>
+  <input type="text" class="_input" placeholder="请输入联系方式"></input>
+</view>
+<!--房间数量（需要进行判断）-->
+<view  class="cu-form-group">
+  <text class="tag">房间数量</text>
+  <input type="text" class="_input" placeholder="请输入房间数量"></input>
+</view>
+<!--房间号（需要进行判断）-->
+<view  class="cu-form-group">
+  <text class="tag">房间号</text>
+  <input type="text" class="_input" placeholder="请输入房间号"></input>
+</view>
+<!--签约日期-->
+<view  class="cu-form-group">
+  <text class="tag">签约日期</text>
+  <input value="{{date}}" placeholder='点我选择日期' bindtap='openCalendar' class="_input"/>
+<!-- 组件 -->
+<my-calendar 
+wx:if="{{calendarShow}}"
+title="日期选择"
+useType="touch"
+date="{{date}}"
+touchColor="#409efe"
+bind:confirm="select"
+bind:cancel="offCalendar"
+/>
+</view>
+<!--房源唯一编码数量（需要进行判断）-->
+<view  class="cu-form-group">
+  <text class="tag">房源唯一编码数量</text>
+  <input type="text" class="_input" placeholder="请输入房源唯一编码数量"></input>
+</view>
+<!--领取合同日期-->
+<view  class="cu-form-group">
+  <text class="tag">领取合同日期</text>
+  <input value="{{date}}" placeholder='点我选择日期' bindtap='openCalendar' class="_input"/>
+<!-- 组件 -->
+<my-calendar 
+wx:if="{{calendar1Show}}"
+title="日期选择"
+useType="touch"
+date="{{date}}"
+touchColor="#409efe"
+bind:confirm="select"
+bind:cancel="offCalendar"
+/>
+</view>
+<!--领取设备日期-->
+<view  class="cu-form-group">
+  <text class="tag">领取设备日期</text>
+  <input value="{{date}}" placeholder='点我选择日期' bindtap='openCalendar' class="_input"/>
+<!-- 组件 -->
+<my-calendar 
+wx:if="{{calendar1Show}}"
+title="日期选择"
+useType="touch"
+date="{{date}}"
+touchColor="#409efe"
+bind:confirm="select"
+bind:cancel="offCalendar"
+/>
+</view>
+<!--设备签收人-->
+<view  class="cu-form-group">
+  <text class="tag">设备签收人</text>
+  <input type="text" class="_input" placeholder="请输入设备签收人"></input>
+</view>
+<!--是否绑定一体机-->
+<view  class="cu-form-group">
+  <text class="tag">是否绑定一体机</text>
+  <input type="text" class="_input" placeholder="请输入是否绑定一体机"></input>
+</view>
+<!--门锁数量-->
+<view  class="cu-form-group">
+  <text class="tag">门锁数量</text>
+  <input type="text" class="_input" placeholder="请输入门锁数量"></input>
+</view>
+<!--门锁缴费日期-->
+<view  class="cu-form-group">
+  <text class="tag">门锁缴费日期</text>
+  <input value="{{date}}" placeholder='点我选择日期' bindtap='openCalendar' class="_input"/>
+<!-- 组件 -->
+<my-calendar 
+wx:if="{{calendar1Show}}"
+title="日期选择"
+useType="touch"
+date="{{date}}"
+touchColor="#409efe"
+bind:confirm="select"
+bind:cancel="offCalendar"
+/>
+</view>
+<!--门锁安装数量-->
+<view  class="cu-form-group">
+  <text class="tag">门锁安装数量</text>
+  <input type="text" class="_input" placeholder="请输入门锁安装数量"></input>
+</view>
+<!--门锁安装日期-->
+<view  class="cu-form-group">
+  <text class="tag">门锁安装日期</text>
+  <input value="{{date}}" placeholder='点我选择日期' bindtap='openCalendar' class="_input"/>
+<!-- 组件 -->
+<my-calendar 
+wx:if="{{calendar1Show}}"
+title="日期选择"
+useType="touch"
+date="{{date}}"
+touchColor="#409efe"
+bind:confirm="select"
+bind:cancel="offCalendar"
+/>
+</view>
+<!--平台上架房间-->
+<view  class="cu-form-group">
+  <text class="tag">平台上架房间</text>
+  <input type="text" class="_input" placeholder="请输入平台上架房间"></input>
+</view>
+<!--备注-->
+<view >
+  <text class="tag">备注</text>
+    <textarea auto-height="" class="texts"></textarea>
+</view>
+<view class="btn">
+  <button form-type="reset" size="mini" class="_btn" open-type>重置</button>
+  <button form-type="submit" size="mini" class="_btn" open-type bindtap='btn'>提交审核</button>
+</view>
+</view>
+

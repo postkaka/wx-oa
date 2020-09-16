@@ -1,0 +1,30 @@
+<!--pages/inventory/inventory.wxml-->
+<view class="logo">
+  <image src="../../assets/image/index/logo.jpg"></image>
+</view>
+<view class="content-list" bindtap="delivery">
+  <view class="content" bindtap="contentListBtn">
+    <view>
+      <image src="../../assets/image/inventory/chuku.png" class="index-image"></image>
+    </view>
+    <text>出库</text>
+  </view>
+  <view class="content" bindtap="storage">
+    <view>
+      <image src="../../assets/image/inventory/ruku.png" class="index-image"></image>
+    </view>
+    <text>入库</text>
+  </view>
+  <view class="content">
+    <view class="_content">
+      <image src="../../assets/image/inventory/liebiao.png" class="index-image"></image>
+    </view>
+    <text>库存列表</text>
+  </view>
+  <view class="content">
+    <view class="_content">
+      <image src="../../assets/image/inventory/category.png" class="index-image"></image>
+    </view>
+    <text>品类管理</text>
+  </view>
+</view>
